@@ -30,8 +30,6 @@ int print_char(va_list types, char buffer[],
  * @size: Size specifier
  * Return: Number of characters printed
  */
- 
-
 int print_string(va_list types, char buffer[],
         int flags, int width, int precision, int size)
 
@@ -75,7 +73,7 @@ int print_string(va_list types, char buffer[],
                 }
         }
 
-        return (write(1, str, length));
+        return (write(0, str, length));
 }
 
 
