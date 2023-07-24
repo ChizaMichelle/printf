@@ -20,7 +20,7 @@ int print_char(va_list types, char buffer[],
 	return (handle_write_char(c, buffer, flags, width, precision, size));
 }
 /**
- * print_char - a function that prints a character
+ * print_string - a function that prints a character
  * @types: List a arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
@@ -29,7 +29,8 @@ int print_char(va_list types, char buffer[],
  * @size: Size specifier
  * Return: Number of characters printed
  */
-int print_string(va_list types, char buffer[],
+
+/** int print_string(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 
 {
@@ -73,7 +74,9 @@ int print_string(va_list types, char buffer[],
 	}
 
 	return (write(1, str, length));
+
 }
+*/
 int print_percent(va_list types, char buffer[],
 		int flags, int width, int precision, int size)
 {
