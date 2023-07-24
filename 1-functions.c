@@ -29,6 +29,10 @@ int print_char(va_list types, char buffer[],
 int print_string(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
+	int length = 0;
+	int i;
+	const char* str = "Hello, world!";
+
 	UNUSED(buffer);
 	UNUSED(flags);
 	UNUSED(width);
